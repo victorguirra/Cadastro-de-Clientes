@@ -98,6 +98,23 @@
                 background-color:#ab0a0a;
             }
 
+            #addNewClient{
+                border:none;
+                margin-top:30px;
+                background-color:#2d767f;
+                width:45%;
+                border-radius:8px;
+                padding:15px 0;
+                cursor:pointer;
+                transition:0.4s;
+                
+            }
+
+            #addNewClient:hover{
+                background-color:#1e6262;
+                padding:20px 0;
+            }
+
             a{
                 text-decoration:none;
                 color:#fff;
@@ -134,7 +151,7 @@
 
                         </thead>
 
-                        <tbody
+                        <tbody>
 
                             <?php
                             require_once 'import.php';
@@ -145,6 +162,12 @@
                     </table>
 
                 </div>      
+
+                <button id="addNewClient">
+
+                    <a href="addNewClient/index.php">Adicionar Novo Cliente</a>
+
+                </button>
 
             </div>
 
