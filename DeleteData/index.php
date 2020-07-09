@@ -1,3 +1,7 @@
+<?php
+    require_once 'delete.php';
+?>
+
 <html>
 
     <head>
@@ -104,17 +108,19 @@
 
                 <img src="delete.png" alt="Delete Data">
 
-                <div class="wrapperButtons">
+                <form class="wrapperButtons" action="" method="POST">
+
+                    <input type="hidden" name="id">
 
                     <button id="yesConfirm" name="yesConfirm">Sim</button>
 
                     <button id="noConfirm" name="noConfirm">
 
-                        <a>Não</a>
+                        <a href="../index.php">Não</a>
 
                     </button>
 
-                </div>
+                </form>
 
             </div>
 
