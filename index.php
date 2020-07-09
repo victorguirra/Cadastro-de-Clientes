@@ -76,7 +76,7 @@
                 border-radius:7px;
                 padding:10px 0;
                 cursor:pointer;
-                transition: 0.4s;
+                transition: 0.3s;
             }
 
             #editData:hover{
@@ -91,7 +91,7 @@
                 border-radius:7px;
                 padding:10px 0;
                 cursor:pointer;
-                transition: 0.4s;
+                transition: 0.3s;
             }
 
             #deleteData:hover{
