@@ -46,6 +46,7 @@
             
             th{
                 width:25%;
+                margin-bottom:5px;
                 
             }
 
@@ -57,6 +58,7 @@
             tr{
                 display:flex;
                 flex-direction:row;
+                border-bottom: 2px solid #1e6262;
             }
             td{
                 width:15%;
@@ -66,6 +68,8 @@
                 margin-left:10px;
                 margin-right:10px;
                 margin-top:20px;
+                margin-bottom:10px;
+                
             }
 
             #editData{
