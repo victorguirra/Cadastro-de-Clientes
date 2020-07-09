@@ -15,7 +15,7 @@ while($data = mysqli_fetch_array($result)){
         <td><?php echo $data['telephone'] ?></td>
 
         <td><button name="editData" id="editData"><a href="editData/index.php?id=<?php echo $data['id'];?>">Editar</a></button></td>
-        <td><button name="deletData" id="deleteData"><a href="deletData/index.php?id=<?php echo $data['id'];?>">Apagar</a></button></td>
+        <td><button name="deletData" id="deleteData"><a href="deleteData/index.php?id=<?php echo $data['id'];?>">Apagar</a></button></td>
 
     </tr>
 
