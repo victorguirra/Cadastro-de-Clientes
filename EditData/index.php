@@ -102,7 +102,7 @@
 
                 <form action="" method="POST">
 
-                    <input type="hidden" value="<?php echo $data['id'] ?>">
+                    <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
 
                     <div class="formGroup">
                         <label for="name">Nome:</label>

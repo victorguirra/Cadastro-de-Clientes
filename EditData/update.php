@@ -3,18 +3,17 @@
 require_once '../db_connection.php';
 
 if(isset($_POST['updateData'])){
-    $id = mysqli_escape_string($_POST['id']);
-    $name = mysqli_escape_string($_POST['name']);
-    $age = mysqli_escape_string($_POST['age']);
-    $email = mysqli_escape_string($_POST['email']);
-    $telephone = mysqli_escape_string($_POST['telephone']);
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $telephone = $_POST['telephone'];
     
-    $sql = "UPDATE data_clients SET";
-    $result = mysqli_query($connect, $sql);
-
-    if($result){
+    $sql = "UPDATE data_clients SET name = '$name', age = '$age', email = '$email', telephone = '$telephone' WHERE id = '$id'";
+    
+    if(mysqli_query($connect, $sql)){
         header('Location: ../index.php');
     }else{
-        echo "Falha ao cadastrar cliente";
+        echo "Erro";
     }
 }

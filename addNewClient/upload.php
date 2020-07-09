@@ -3,10 +3,10 @@
 require_once '../db_connection.php';
 
 if(isset($_POST['addClient'])){
-    $name = mysqli_escape_string($_POST['name']);
-    $age = mysqli_escape_string($_POST['age']);
-    $email = mysqli_escape_string($_POST['email']);
-    $telephone = mysqli_escape_string($_POST['telephone']);
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $telephone = $_POST['telephone'];
     
     $sql = "INSERT INTO data_clients (`id`, `name`, `age`, `email`, `telephone`) VALUES (NULL, '$name', '$age', '$email', '$telephone')";
     $result = mysqli_query($connect, $sql);
