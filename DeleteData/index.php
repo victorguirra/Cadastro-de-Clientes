@@ -102,7 +102,7 @@
 
                 <h2>Tem certeza que deseja excluir os dados deste cliente?</h2>
 
-                <img src="DeleteData/delete.png" alt="Delete Data">
+                <img src="delete.png" alt="Delete Data">
 
                 <div class="wrapperButtons">
 
