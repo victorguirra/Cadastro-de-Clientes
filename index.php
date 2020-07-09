@@ -25,8 +25,7 @@
             }
 
             .wrapperListClient{
-                background-color:#ff1493;
-                width:50%;
+                width:60%;
             }
 
             .wrapperInfoClients{
@@ -37,9 +36,71 @@
                 margin-top:20px;
             }
 
-            .wrapperEspecificInfo{
-                background-color:#2690e7;
+            table{
+                width:100%;
+            }
+
+            thead{
+                width:80%;
+            }
+            
+            th{
+                width:25%;
+                
+            }
+
+            tbody{
+                display:flex;
+                flex-direction:column;
+            }
+
+            tr{
+                display:flex;
+                flex-direction:row;
+            }
+            td{
                 width:15%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin-left:10px;
+                margin-right:10px;
+                margin-top:20px;
+            }
+
+            #editData{
+                border:none;
+                background-color:#482ff7;
+                color:#fff;
+                width:60%;
+                border-radius:7px;
+                padding:10px 0;
+                cursor:pointer;
+                transition: 0.4s;
+            }
+
+            #editData:hover{
+                background-color:#2f54f7;
+            }
+
+            #deleteData{
+                border:none;
+                background-color:#ff304f;
+                color:#fff;
+                width:60%;
+                border-radius:7px;
+                padding:10px 0;
+                cursor:pointer;
+                transition: 0.4s;
+            }
+
+            #deleteData:hover{
+                background-color:#ab0a0a;
+            }
+
+            a{
+                text-decoration:none;
+                color:#fff;
             }
 
         </style>
@@ -54,9 +115,36 @@
 
                 <h1>Meus Clientes</h1>
 
-                <?php
-                    require_once 'import.php';
-                ?>
+                <div class="wrapperInfoClients">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Nome</th>
+                                <th>Idade</th>
+                                <th>Email</th>
+                                <th>Telefone</th>
+                                <th></th>
+                                <th></th>
+
+                            <tr>
+
+                        </thead>
+
+                        <tbody
+
+                            <?php
+                            require_once 'import.php';
+                            ?>
+
+                        </tbody>
+
+                    </table>
+
+                </div>      
 
             </div>
 

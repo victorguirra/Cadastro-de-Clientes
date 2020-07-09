@@ -7,26 +7,18 @@ $result = mysqli_query($connect, $sql);
 
 while($data = mysqli_fetch_array($result)){
 ?>  
-    <div class="wrapperInfoClients">
+    <tr>
 
-        <table>
+    <td><?php echo $data['name'] ?></td>
+    <td><?php echo $data['age'] ?></td>
+    <td><?php echo $data['email'] ?></td>
+    <td><?php echo $data['telephone'] ?></td>
 
-            <thead>
+    <td><button name="editData" id="editData"><a href="editData/index.php?id=<?php echo $data['id'];?>">Editar</button></td>
+    <td><button name="deletData" id="deleteData">Apagar</button></td>
 
-                <tr>
+    </tr>
 
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-
-                <tr>
-
-            </thead>
-
-        </table>
-    
-    </div>
 <?php
 };
 ?>
