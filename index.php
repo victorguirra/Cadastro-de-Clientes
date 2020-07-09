@@ -29,6 +29,19 @@
                 width:50%;
             }
 
+            .wrapperInfoClients{
+                display:flex;
+                flex-direction:row;
+                align-items:center;
+                justify-content:space-around;
+                margin-top:20px;
+            }
+
+            .wrapperEspecificInfo{
+                background-color:#2690e7;
+                width:15%;
+            }
+
         </style>
 
     </head>

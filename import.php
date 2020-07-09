@@ -6,8 +6,27 @@ $sql = "SELECT * FROM data_clients";
 $result = mysqli_query($connect, $sql);
 
 while($data = mysqli_fetch_array($result)){
-?>
-    <h1><?php echo $data['name'];?></h1>
+?>  
+    <div class="wrapperInfoClients">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+
+                <tr>
+
+            </thead>
+
+        </table>
+    
+    </div>
 <?php
 };
 ?>
